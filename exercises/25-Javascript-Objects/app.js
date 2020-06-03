@@ -32,7 +32,9 @@ function addAllFamilyLuckyNumbers(anArray){
 }
 
 //Enter all your code here:
-
+ function spliceFunction(person) { 
+            person.lucky_numbers.splice(3,1,33); 
+            document.getElementById("geeks").innerHTML = lucky_numbers; 
 
 //Do not make changes below:
 console.log(addAllFamilyLuckyNumbers(family.members)); 

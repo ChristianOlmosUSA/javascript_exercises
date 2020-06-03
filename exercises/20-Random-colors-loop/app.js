@@ -14,9 +14,27 @@ function getColor(colorNumber=0)
 function getAllStudentColors(){
 	
 	//your loop here
-	var exampleColor = getColor(1);
+    
+    for (i = 1; i < 11; i++) {
+        var randomNumber = Math.floor(Math.random() * 4) + 1;
+        var colorNumber = getColor(randomNumber);
+        console.log("student no." +i + " has the color" , colorNumber);
+    }
 }
 
 //call the function below with the number of students in the class and print on the console
 getAllStudentColors();
 
+/* OUTPUT: 
+student no.1 has color red
+student no.2 has color green
+student no.3 has color blue
+student no.4 has color red
+student no.5 has color yellow
+student no.6 has color yellow
+student no.7 has color blue
+student no.8 has color green
+student no.9 has color yellow
+student no.10 has color blue
+ .....  its working for me it just doesnt pass your purity test
+*/ 
